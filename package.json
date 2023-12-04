@@ -8,33 +8,37 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "svgr": "npx @svgr/cli --out-dir src/assets --ignore-existing --typescript --no-prettier --replace-attr-values '#FBF7F7=currentColor' --replace-attr-values '1em=24' --icon -- svgs && next lint -- --fix"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
     "next": "14.0.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.1.0"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.6.1",
-    "@storybook/addon-interactions": "^7.6.1",
-    "@storybook/addon-links": "^7.6.1",
-    "@storybook/addon-onboarding": "^1.0.8",
-    "@storybook/blocks": "^7.6.1",
-    "@storybook/nextjs": "^7.6.1",
-    "@storybook/react": "^7.6.1",
-    "@storybook/test": "^7.6.1",
+    "@storybook/addon-essentials": "^7.6.3",
+    "@storybook/addon-interactions": "^7.6.3",
+    "@storybook/addon-links": "^7.6.3",
+    "@storybook/addon-onboarding": "^1.0.9",
+    "@storybook/blocks": "^7.6.3",
+    "@storybook/nextjs": "^7.6.3",
+    "@storybook/react": "^7.6.3",
+    "@storybook/test": "^7.6.3",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-storybook": "^0.6.15",
-    "postcss": "^8",
-    "storybook": "^7.6.1",
-    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.32",
+    "storybook": "^7.6.3",
+    "tailwindcss": "^3.3.5",
     "typescript": "^5"
   }
 }

@@ -1,20 +1,30 @@
-import type { Config } from 'tailwindcss'
+// Import the required type
+import type { Config } from "tailwindcss";
+/** @type {import('tailwindcss').Config} */
 
+// Export a function that returns the configuration object
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    background: "linear-gradient(341deg, #2E192E 27.37%, #48213B 107.43%)",
+    colors: {
+      magenta: "#2E192E",
+      "lighter-magenta": "#48213B",
+      pink: "#A22875",
+      white: "#FBF7F7",
+      black: "#141B1D",
+    },
+    fontFamily: {
+      Mate: ["Mate, Inter"],
+    },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        gradientImage:
+          "linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(<path-to-image>), lightgray -6.084px -180.04px / 98.833% 188.258% no-repeat)",
       },
     },
   },
   plugins: [],
-}
-export default config
+};
+
+export default config;
