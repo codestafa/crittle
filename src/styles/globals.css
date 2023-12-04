@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Mate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Mate&display=swap");
+@layer base {
+}
+
+@layer components {
+  .card {
+    @apply bg-fills-card border border-fills-card-stroke overflow-hidden rounded-lg;
+  }
+}
