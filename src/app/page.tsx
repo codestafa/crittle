@@ -5,6 +5,7 @@ import producer from "../../src/public/images/musicProducer.jpg";
 
 import "../styles/globals.css";
 import { ProfileCircle } from "../assets/icons";
+import Button from "../components/Button/Button";
 
 export default function Page() {
   return (
@@ -12,7 +13,8 @@ export default function Page() {
       <div className="flex flex-col h-screen">
         <div className="fixed w-screen z-10">
           <Header>
-            <ProfileCircle className="w-10 h-10 text-white"></ProfileCircle>
+            {/* {<ProfileCircle className="w-10 h-10 text-white"></ProfileCircle>} */}
+            <Button>log in</Button>
           </Header>
         </div>
         <div className="flex items-center">
@@ -55,6 +57,7 @@ export default function Page() {
             magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
             nostrum exercitationem ullam corporis
           </p>
+          <Button className="mb-4">create account</Button>
         </div>
       </div>
     </>
