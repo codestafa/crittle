@@ -1,7 +1,6 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
-import { ProfileCircle } from "../../assets/icons";
 
 type HeaderProps = {
   children: ReactNode;
@@ -36,7 +35,9 @@ export default function Header({ children, ...variantProps }: HeaderProps) {
               </a>
             </li>
           </div>
-          <div className="ml-auto items-center inline-flex">{children}</div>
+          <div className="ml-auto items-center inline-flex w-50">
+            {children}
+          </div>
         </ul>
       </header>
     </div>

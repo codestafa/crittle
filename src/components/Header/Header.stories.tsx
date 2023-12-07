@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Header from "./Header";
-import { ProfileCircle } from "../../assets/icons";
+import { ProfileCircle } from "../../assets/icons/index";
 
 const meta = {
   title: "Components/Header",

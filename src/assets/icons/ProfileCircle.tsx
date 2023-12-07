@@ -10,7 +10,7 @@ const SvgProfileCircle = (props: SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <g
-      stroke="#FBF7F7"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}

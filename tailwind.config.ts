@@ -6,11 +6,13 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    background: "linear-gradient(341deg, #2E192E 27.37%, #48213B 107.43%)",
+    background: {
+      header: "linear-gradient(341deg, #2E192E 27.37%, #48213B 107.43%)",
+    },
     colors: {
       magenta: "#2E192E",
       "lighter-magenta": "#48213B",
-      pink: "#A22875",
+      customPink: "#A22875",
       white: "#FBF7F7",
       black: "#141B1D",
     },
@@ -19,8 +21,8 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        gradientImage:
-          "linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(<path-to-image>), lightgray -6.084px -180.04px / 98.833% 188.258% no-repeat)",
+        my_bg_image_styling:
+          "linear-gradient(181deg, rgba(0, 0, 0, 0.90) 1.75%, rgba(0, 0, 0, 0.00) 69.92%), linear-gradient(270deg, rgba(8, 15, 15, 0.20) 0.3%, rgba(8, 10, 10, 0.20) 1.58%), url(<path-to-image>), lightgray -5.032px -178.744px / 100.77% 188.258% no-repeat",
       },
     },
   },

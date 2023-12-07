@@ -9,7 +9,7 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "svgr": "npx @svgr/cli --out-dir src/assets --ignore-existing --typescript --no-prettier --replace-attr-values '#FBF7F7=currentColor' --replace-attr-values '1em=24' --icon -- svgs && next lint -- --fix"
+    "svgr": "npx @svgr/cli --out-dir src/assets/icons --ignore-existing --typescript --no-prettier --replace-attr-values '#FBF7F7=currentColor' --replace-attr-values '1em=24' --icon -- svgs && next lint -- --fix"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
@@ -27,6 +27,7 @@
     "@storybook/nextjs": "^7.6.3",
     "@storybook/react": "^7.6.3",
     "@storybook/test": "^7.6.3",
+    "@svgr/cli": "^8.1.0",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
