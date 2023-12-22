@@ -1,4 +1,5 @@
 import { cva, VariantProps } from "class-variance-authority";
+import Link from "next/link";
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -13,9 +14,11 @@ export default function Header({ children, ...variantProps }: HeaderProps) {
         <ul className="gap-5 flex tracking-widest leading-normal">
           <div>
             <li className="mb-2">
-              <h1 className="text-white text-5xl font-Mate inline-flex">
-                crittle
-              </h1>
+              <Link href={"/"}>
+                <h1 className="text-white text-5xl font-Mate inline-flex">
+                  crittle
+                </h1>
+              </Link>
             </li>
           </div>
           <div className="flex-wrap flex gap-5 items-center text-sm">

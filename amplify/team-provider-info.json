@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-crittle-dev-83126-authRole",
+      "UnauthRoleArn": "arn:aws:iam::958950303130:role/amplify-crittle-dev-83126-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::958950303130:role/amplify-crittle-dev-83126-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-crittle-dev-83126-deployment",
+      "UnauthRoleName": "amplify-crittle-dev-83126-unauthRole",
+      "StackName": "amplify-crittle-dev-83126",
+      "StackId": "arn:aws:cloudformation:us-east-1:958950303130:stack/amplify-crittle-dev-83126/e54d9ff0-9dc2-11ee-8dbc-126802f17de3",
+      "AmplifyAppId": "d33slo0jexz8wz"
+    },
+    "categories": {
+      "auth": {
+        "crittleb57f086e": {}
+      }
+    }
+  }
+}
