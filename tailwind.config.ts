@@ -4,7 +4,7 @@ import type { Config } from "tailwindcss";
 
 // Export a function that returns the configuration object
 const config: Config = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./app/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     background: {
       header: "linear-gradient(341deg, #2E192E 27.37%, #48213B 107.43%)",

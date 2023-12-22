@@ -1,22 +1,25 @@
-import Header from "../components/Header/Header";
+"use client";
+
+import Header from "../src/components/Header/Header";
 import Image from "next/image";
-import studio from "../../src/public/images/studio.jpg";
-import producer from "../../src/public/images/musicProducer.jpg";
+import studio from "../src/public/images/studio.jpg";
+import producer from "../src/public/images/musicProducer.jpg";
 
-import "../styles/globals.css";
-import { ProfileCircle } from "../assets/icons";
-import Button from "../components/Button/Button";
+import Button from "../src/components/Button/Button";
+import { Authenticator } from "@aws-amplify/ui-react";
 
-export default function Page() {
+import "@aws-amplify/ui-react/styles.css";
+import { Amplify } from "aws-amplify";
+import awsExports from "../src/aws-exports";
+import { withAuthenticator } from "@aws-amplify/ui-react";
+import Link from "next/link";
+
+Amplify.configure({ ...awsExports });
+
+function Page() {
   return (
     <>
       <div className="flex flex-col h-screen">
-        <div className="fixed w-screen z-10">
-          <Header>
-            {/* {<ProfileCircle className="w-10 h-10 text-white"></ProfileCircle>} */}
-            <Button>log in</Button>
-          </Header>
-        </div>
         <div className="flex items-center">
           <div className="flex-shrink-0 w-screen h-screen">
             <Image alt="studio" src={studio} className="object-cover" fill />
@@ -57,9 +60,13 @@ export default function Page() {
             magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
             nostrum exercitationem ullam corporis
           </p>
-          <Button className="mb-4">create account</Button>
+          <Link href={"/auth"}>
+            <Button className="mb-4"> create account</Button>
+          </Link>
         </div>
       </div>
     </>
   );
 }
+
+export default Page;
